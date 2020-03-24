@@ -1,6 +1,6 @@
-function exportCsv() {
-	$('.table').tableExport({
-	    filename: 'gene-expression-scatter-plot',
-	    type: 'csv'
-	});
-}
+// function exportCsv() {
+// 	$('.table').tableExport({
+// 	    filename: 'gene-expression-scatter-plot',
+// 	    type: 'excel'
+// 	});
+// }

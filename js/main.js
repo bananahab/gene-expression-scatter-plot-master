@@ -25,58 +25,6 @@ function startRun() {
     $("#id_main_output").hide();
     $("#id_main_settings").hide();
 }
-function showTable() {
-	$("#userTable").DataTable({
-	    "processing": true,
-	    "columnDefs": [
-	        {
-	            {title: "1"},
-				{title: "1"},
-				{title: "1"},
-				{title: "1"},
-	        },
-	    ],
-	    //自定义样式
-	    "pagingType": "full_numbers",
-	    "order": [[0, "desc"]],
-	    "language": {
-	        "processing": "正在加载...",
-	        "sInfo": "当前显示第 _START_ 到第 _END_ 条，共 _TOTAL_ 条",
-	        "sInfoFiltered": "(从_MAX_条筛选 )",
-	        "sInfoEmpty": "共筛选到0条",
-	        "sSearch": "搜索:",
-	        "sLengthMenu": "每页显示 _MENU_ 条",
-	        "sZeroRecords": "未筛选到相关内容",
-	        "paginate": {
-	            "sFirst": "首页",
-	            "sLast": "尾页",
-	            "sPrevious": "上一页",
-	            "sNext": "下一页",
-	            "first": "首页",
-	            "last": "尾页",
-	            "next": "下一页",
-	            "previous": "上一页"
-	        }
-	    },
-	    dom: '<"row"<"col-sm-6"l><"col-sm-6"f>>rt<"row"<"col-sm-6"i><"col-sm-6"p>><"row d-none"B>',
-	    buttons: [
-	        {
-	            extend: 'excelHtml5',
-	            title: '用户表',
-	            exportOptions: {
-	                columns: [0, 1, 2, 3, 4]
-	            }
-	        },
-	        {
-	            extend: 'print',
-	            title: '用户表',
-	            exportOptions: {
-	                columns: [0, 1, 2, 3, 4]
-	            }
-	        }
-	    ]
-	});
-}
 function clickTheSubmit() {
     $("#id_main_output_scatter").show();
     $("#id_main_output_tooltips").show();
@@ -255,6 +203,7 @@ function makeJsonIntoArray(jsonGene1, jsonGene2, jsonInformation, isJsonInformat
     lastLineCorrelationCoefficient = getCorrelationCoefficientAndSetGroups();
     if (numberOfExecuted != 0) {
         sortByColumn(2);
+		
     }
 }
 function setAndDisplayUtilization (numberOfExecuted, numberOfExecutedInfor, numberOfGene1, numberOfGene2, numberOfInformation, isJsonInformation) {

@@ -6,21 +6,14 @@
 <link rel="icon" href="src/title_icon.png">
 <link rel="stylesheet" href="css/gene_scatter_plot_main.css">
 <link rel="stylesheet" href="css/nv.d3.css">
-<!-- Datatables -->
-<link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-<!-- Export -->
-<link rel="stylesheet" href="../plugins/export/css/buttons.dataTables.min.css" />
-
 <script src="js/jQuery.js"></script>
 <script src="js/d3.min.js"></script>
 <script src="js/nv.d3.js"></script>
 <script src="js/main.js"></script> 
 <script src="js/tToP.js"></script> 
 <script src="js/updateMain.js"></script>
-<!-- <script src="js/jquery.base64.js"></script>
-<script src="js/tableExport.js"></script> -->
+<script src="js/jquery.base64.js"></script>
+<script src="js/tableExport.js"></script>
 
 </head>
 <body class="with-3d-shadow with-transitions"">
@@ -73,46 +66,18 @@
         </div>
     </div>
     <!--main_output-->
-    <div id="id_main_output">
-        <div class="center-div">
-            <!-- <table class="table table-bordered table-striped"  id="id_main_output_table"  border="1" align="center">
-            </table> -->
-			<div class="card">
-			    <div class="card-header">
-			        <h3 class="card-title">
-			            <i class="fas fa-database mr-1"></i>
-			            用户列表
-			        </h3>
-			        <div class="card-tools">
-			            <button type="button" class="btn btn-tool" onclick="$('button.buttons-excel').trigger('click');" title="下载Excel文件"><i class="fas fa-file-excel"></i></button>
-			            <button type="button" class="btn btn-tool" onclick="$('button.buttons-print').trigger('click');" title="打印"><i class="fas fa-print"></i></button>  
-			        </div>
-			    </div>
-			    <div class="card-body">
-			        <table id="id_main_output_table" class="table table-bordered text-center" style="width: 100%;">
-			            <thead>
-			                <tr>
-			                    <th>#</th>
-			                    <th>用户名</th>
-			                    <th>真实姓名</th>
-			                    <th>工作部门</th>
-			                    <th>用户类型</th>
-			                    <th>操作</th>
-			                </tr>
-			            </thead>
-			            <tbody>
-			            </tbody>
-			        </table>
-			    </div>
-			</div>
-			<!-- <p align="center">
-			    <button class="button buttonShadow" id="generate-excel" onClick="export1()">Export Table</button>
-			</p> -->
-            <p align="center">
-                <button class="button buttonShadow" onClick="window.location.reload();">Home</button>
-            </p>
-        </div>
-    </div>
+	<div id="id_main_output">
+	    <div class="center-div">
+	        <table  id="id_main_output_table"  border="1" align="center">
+	        </table>
+			<p align="center">
+			    <button class="button buttonShadow" id="generate-excel" onClick="exportCsv()">Export Table</button>
+			</p>
+	        <p align="center">
+	            <button class="button buttonShadow" onClick="window.location.reload();">Home</button>
+	        </p>
+	    </div>
+	</div>
     <!--main_support-->
     <p align="center">
         <a href="support.html" target="_blank">
@@ -164,19 +129,6 @@
 <script>
     startRun();
 </script>
-<!-- Export -->
-    <script src="../plugins/export/js/dataTables.buttons.min.js"></script>
-    <script src="../plugins/export/js/jszip.min.js"></script>
-    <script src="../plugins/export/js/buttons.html5.min.js"></script>
-    <script src="../plugins/export/js/buttons.flash.min.js"></script>
-    <script src="../plugins/export/js/pdfmake.min.js"></script>
-    <script src="../plugins/export/js/vfs_fonts.js"></script>
-    <script src="../plugins/export/js/buttons.print.min.js"></script>
-<!-- DataTables -->
-    <script src="../plugins/datatables/jquery.dataTables.js"></script>
-    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
-<!-- Bootstrap 4 -->
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

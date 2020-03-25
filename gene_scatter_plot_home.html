@@ -70,8 +70,9 @@
 	    <div class="center-div">
 	        <table  id="id_main_output_table"  border="1" align="center">
 	        </table>
+			
 			<p align="center">
-			    <button class="button buttonShadow" id="generate-excel" onClick="$('#id_main_output_table').tableExport({type:'excel',  escape:'false'}); ">Export Table</button>
+			    <button class="button buttonShadow" id="generate-excel" onClick="$('#id_main_output_table').tableExport({type:'csv', escape:'false', fileName:'gene_scatter_plot',}); ">Export Table</button>
 			</p>
 	        <p align="center">
 	            <button class="button buttonShadow" onClick="window.location.reload();">Home</button>

@@ -748,6 +748,7 @@ function makeNumberToStringAndExponential(temp) {
             break;
         }
     }
+	//将&times;修改为x解决导出到csv文件出现乱码问题
     str = strTemp.substring(0, indexOfE) + "x10<sup>" + strTemp.substring(indexOfE + 1) + "</sup>";
     return str;
 }

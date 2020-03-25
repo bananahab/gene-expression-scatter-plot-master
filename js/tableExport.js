@@ -75,6 +75,7 @@ THE SOFTWARE.*/
 						console.log(tdData);
 					}
 					var base64data = "base64," + $.base64.encode(tdData);
+					//修改fileName的名称为指定名称
 					window.open('data:application/'+defaults.type+';filename=gene-expression-scatter-plot;' + base64data);
 				}else if(defaults.type == 'sql'){
 				
